@@ -1,0 +1,33 @@
+@import "variables";
+
+#section-a {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+
+  .text-container {
+    padding-top: 1rem;
+  }
+}
+
+#section-b {
+  text-align: center;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+
+  .text-container {
+    padding-top: 0.7rem;
+
+    border-radius: 10px;
+    background-color: $Blue;
+    height: 75px;
+    box-shadow: 0 5px hsla(249, 8%, 35%, 0.4);
+  }
+
+  .strong {
+    font-weight: 600;
+  }
+}
