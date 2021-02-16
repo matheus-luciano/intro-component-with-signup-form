@@ -1,8 +1,61 @@
+@import 'variables';
+
 form{
     padding: 1rem;
-    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    small{
+        color: $GrayishBlue;
+        font-weight: 400;
+    }
+
+    a{
+        text-decoration: none;
+        color: $red;
+        font-weight: 600;
+    }
+}
+
+input{
+    justify-content: space-between;
+    border: 2px solid $GrayishBlue;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+
+    padding: 0.8rem;
+    width: 100%;
+}
+
+#form{
+    justify-content: space-between;
+    text-align: center;
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px hsla(249, 8%, 35%, 0.4);
+    height: 328px;
 }
 
 .sr-only{
-    
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.btn{
+    border: none;
+    background-color: $Green;
+    color: white;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 45px;
+    font-weight: 700;
 }

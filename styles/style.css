@@ -35,11 +35,91 @@
   font-weight: 600;
 }
 
-form {
-  padding: 1rem;
+#section-c {
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form {
+  padding: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form small {
+  color: #aeadb8;
+  font-weight: 400;
+}
+
+form a {
+  text-decoration: none;
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+input {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid #aeadb8;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  width: 100%;
+}
+
+#form {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px rgba(84, 82, 96, 0.4);
+          box-shadow: 0 5px rgba(84, 82, 96, 0.4);
+  height: 328px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.btn {
+  border: none;
+  background-color: #38cc8c;
+  color: white;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 45px;
+  font-weight: 700;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+  color: #3e52a3;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 * {
@@ -52,16 +132,10 @@ form {
 body {
   font-family: "Poppins", sans-serif;
   background-image: url("../images/bg-intro-mobile.png");
-  background-color: rgba(255, 122, 122, 0.8);
+  background-color: #ff7a7a;
 }
 
 h2 {
   font-weight: 700;
-}
-
-footer {
-  font-size: 11px;
-  text-align: center;
-  color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */

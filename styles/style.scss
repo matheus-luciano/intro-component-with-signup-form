@@ -2,6 +2,7 @@
 @import "variables";
 @import 'sections';
 @import 'form';
+@import 'footer';
 
 * {
   padding: 0;
@@ -13,14 +14,11 @@ body {
   font-family: "Poppins", sans-serif;
   background-image: url("../images/bg-intro-mobile.png");
   background-color: $red;
+  
 }
 
 h2{
   font-weight: 700;
 }
 
-footer {
-  font-size: 11px;
-  text-align: center;
-  color: hsl(228, 45%, 44%);
-}
+
