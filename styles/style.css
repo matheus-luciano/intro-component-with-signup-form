@@ -1,4 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@media (min-width: 700px) {
+  body {
+    background-image: url("../images/bg-intro-desktop.png");
+  }
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100px 2fr 2fr 100px;
+        grid-template-columns: 100px 2fr 2fr 100px;
+    -ms-grid-rows: 70px 100px 1fr 1fr 70px;
+        grid-template-rows: 70px 100px 1fr 1fr 70px;
+  }
+  #section-a {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    text-align: left;
+    height: 100%;
+  }
+  #section-a .content-wrap {
+    text-align: left;
+  }
+  #section-a h2 {
+    font-size: 70px;
+  }
+  #section-a p {
+    font-size: 20px;
+  }
+  #section-b {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  #section-c {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    grid-row: 3/6;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  #section-c form {
+    padding: 32px;
+  }
+  #section-c #form .input-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 #section-a {
   text-align: center;
   padding: 2rem;

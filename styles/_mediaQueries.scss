@@ -1,0 +1,68 @@
+@import 'variables';
+
+
+@media(min-width: 700px){
+    body{
+        background-image: url("../images/bg-intro-desktop.png");
+    }
+
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100px 2fr 2fr 100px;
+        grid-template-rows: 70px 100px 1fr 1fr 70px;  
+    }
+
+    // Main text
+
+    #section-a{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        text-align: left;
+        height: 100%;
+
+        .content-wrap{
+            text-align: left;
+        }
+
+        h2{
+            font-size: 70px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    // price infomation
+
+    #section-b{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    // form
+
+    #section-c{
+        grid-row: 3/6;
+        grid-column: 3/4;
+        
+        
+        form{
+            padding: 32px;
+            
+         }
+
+        #form{
+            
+
+            .input-group{
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+            }
+        } 
+    }
+
+}
+
