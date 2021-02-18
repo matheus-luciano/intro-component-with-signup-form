@@ -1,27 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   body {
     background-image: url("../images/bg-intro-desktop.png");
   }
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 100px 2fr 2fr 100px;
-        grid-template-columns: 100px 2fr 2fr 100px;
-    -ms-grid-rows: 70px 100px 1fr 1fr 70px;
-        grid-template-rows: 70px 100px 1fr 1fr 70px;
+    -ms-grid-columns: 120px 2fr 2fr 120px;
+        grid-template-columns: 120px 2fr 2fr 120px;
+    -ms-grid-rows: 140px 100px 1fr 1fr 140px;
+        grid-template-rows: 140px 100px 1fr 1fr 140px;
   }
   #section-a {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;
     -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-    text-align: left;
+    -ms-grid-row-span: 2;
+    grid-row: 3/5;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100%;
+    display: -ms-grid;
+    display: grid;
   }
   #section-a .content-wrap {
+    display: block;
     text-align: left;
   }
   #section-a h2 {
@@ -40,16 +49,26 @@
   }
   #section-c {
     -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    grid-row: 3/6;
+    -ms-grid-row-span: 2;
+    grid-row: 3/5;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
   }
   #section-c form {
     padding: 32px;
+    height: 100%;
   }
-  #section-c #form .input-group {
+  #section-c .btn-container {
+    padding: 1rem;
+  }
+  #section-c .form {
+    height: 100%;
+  }
+  #section-c .form input {
+    height: 55px;
+  }
+  #section-c .form .input-group {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -57,6 +76,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 1rem 1rem;
   }
 }
 
@@ -139,7 +159,7 @@ input {
   width: 100%;
 }
 
-#form {
+.form {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -149,7 +169,7 @@ input {
   border-radius: 10px;
   -webkit-box-shadow: 0 5px rgba(84, 82, 96, 0.4);
           box-shadow: 0 5px rgba(84, 82, 96, 0.4);
-  height: 328px;
+  height: 100%;
 }
 
 .sr-only {
@@ -174,11 +194,14 @@ input {
   font-weight: 700;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 footer {
   font-size: 11px;
   text-align: center;
   color: #3e52a3;
-  position: absolute;
   width: 100%;
   bottom: 0;
 }

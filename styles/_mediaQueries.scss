@@ -1,7 +1,9 @@
 @import 'variables';
 
 
-@media(min-width: 700px){
+
+
+@media(min-width: 900px){
     body{
         background-image: url("../images/bg-intro-desktop.png");
     }
@@ -9,20 +11,29 @@
 
     .grid{
         display: grid;
-        grid-template-columns: 100px 2fr 2fr 100px;
-        grid-template-rows: 70px 100px 1fr 1fr 70px;  
+        grid-template-columns: 120px 2fr 2fr 120px;
+        grid-template-rows: 140px 100px 1fr 1fr 140px;  
     }
 
     // Main text
 
     #section-a{
         grid-column: 2/3;
-        grid-row: 3/4;
-        text-align: left;
+        grid-row: 3/5;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         height: 100%;
+        display: grid;
+
 
         .content-wrap{
+        
+            display: block;
+            
+            
             text-align: left;
+            
         }
 
         h2{
@@ -44,25 +55,37 @@
     // form
 
     #section-c{
-        grid-row: 3/6;
+        grid-row: 3/5;
         grid-column: 3/4;
         
         
         form{
             padding: 32px;
+            height: 100%;
             
          }
 
-        #form{
+        .btn-container{
+            padding: 1rem;
+        }
+
+        .form{
             
+            height: 100%;
+
+            input{
+                height: 55px;
+            }
 
             .input-group{
                 justify-content: center;
                 text-align: center;
                 align-items: center;
+                padding: 1rem 1rem;
             }
+
+            
         } 
     }
-
 }
 
