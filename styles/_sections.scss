@@ -19,8 +19,9 @@
   align-items: center;
 
   .text-container {
+    position: relative;
     padding-top: 0.7rem;
-
+    
     border-radius: 10px;
     background-color: $Blue;
     height: 75px;
@@ -28,6 +29,7 @@
   }
 
   .strong {
+    position: relative;
     font-weight: 600;
   }
 }
