@@ -7,7 +7,7 @@ form{
     align-items: center;
 
     small{
-        color: $GrayishBlue;
+        color: $red;
         font-weight: 400;
     }
 
@@ -21,7 +21,7 @@ form{
 input{
     justify-content: space-between;
     border: 2px solid $GrayishBlue;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     border-radius: 0.5rem;
 
     padding: 0.8rem;
@@ -32,8 +32,9 @@ input{
     position: relative;
     i{
         position: absolute;
-        top: 37px;
-        right: 26px;
+        top: 16px;
+        right: 15px;
+        color: $red;
         visibility: hidden;
     }
 
@@ -49,6 +50,9 @@ input{
             border-color: $Green;
         }
 
+        i{
+            color: $Green;
+        }
         .fas.fa-check-circle{
             visibility: visible;
         }
@@ -66,7 +70,7 @@ input{
         }
 
         small{
-            visibility: visible
+            visibility: visible;
         };
     }
 }

@@ -1,5 +1,5 @@
 @import 'variables';
-
+@import 'form';
 
 
 
@@ -17,6 +17,23 @@
 
     // Main text
 
+    .form{
+
+        input{
+            margin-bottom: 0.5rem;
+        }
+
+    
+        .input-group {
+            position: relative;
+            i{
+                position: absolute;
+                top: 37px;
+                right: 26px;
+                visibility: hidden;
+            }
+        } 
+}  
     #section-a{
         grid-column: 2/3;
         grid-row: 3/5;
